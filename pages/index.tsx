@@ -23,7 +23,7 @@ const HomePage: NextPage = () => {
             <Header />
 
             <main className={styles.main}>
-                <h2>All your developer ingredients, in one place.</h2>
+                <h2>Coming Soon...</h2>
             </main>
 
             <Footer />
