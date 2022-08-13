@@ -12,7 +12,7 @@
     border: none;
     border-radius: 0.5rem;
 
-    color: var(--highlight);
+    color: var(--color);
     background-color: var(--background);
 
     transition: color 0.3s, background 0.3s;
@@ -20,5 +20,5 @@
 
 .button:hover {
     color: var(--background);
-    background-color: var(--highlight);
+    background-color: var(--color);
 }
