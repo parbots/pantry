@@ -9,9 +9,16 @@
     width: 90vw;
     height: 100vh;
 
+    padding: 1rem;
+
     grid-area: content;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    padding-left: 1rem;
+
+    font-size: 2rem;
 }

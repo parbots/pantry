@@ -4,6 +4,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Header from 'layouts/pages/dashboard/Header';
+import Dashboard from 'layouts/Dashboard';
 import Footer from 'layouts/pages/dashboard/Footer';
 
 const DashboardPage: NextPage = () => {
@@ -19,9 +20,8 @@ const DashboardPage: NextPage = () => {
 
             <Header />
             <main className={styles.main}>
-                <h2>Coming Soon...</h2>
+                <Dashboard />
             </main>
-
             <Footer />
         </div>
     );
