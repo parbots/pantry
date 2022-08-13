@@ -9,7 +9,7 @@ const HomePage: NextPage = () => {
     return (
         <div className={styles.page}>
             <Head>
-                <title>Next Starter</title>
+                <title>Pantry</title>
                 <meta
                     name='description'
                     content='All your developer ingredients, in one place!'
@@ -17,7 +17,17 @@ const HomePage: NextPage = () => {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <h1>Pantry</h1>
+            <header className={styles.header}>
+                <h1>Pantry</h1>
+            </header>
+
+            <main className={styles.main}>
+                <h2>All your developer ingredients, in one place.</h2>
+            </main>
+
+            <footer className={styles.footer}>
+                <p className={styles.copyright}>© Parker Botsford 2022</p>
+            </footer>
         </div>
     );
 };
