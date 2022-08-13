@@ -42,6 +42,8 @@
     text-decoration: none;
 
     color: var(--color);
+
+    transition: color 0.3s, background 0.3s;
 }
 
 .navLink:hover {
