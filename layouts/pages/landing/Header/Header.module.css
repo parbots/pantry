@@ -1,9 +1,49 @@
 .header {
     height: 10vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navBar {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navItem {
+    display: flex;
+}
+
+.navLink {
+    padding: 0.2rem;
+
+    text-decoration: none;
+
+    color: var(--color);
+}
+
+.navLink:hover {
+    text-decoration: underline 2px;
 }
