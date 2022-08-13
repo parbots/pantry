@@ -1,0 +1,15 @@
+.footer {
+    height: 5vh;
+
+    grid-area: footer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--highlight);
+}
+
+.copyright {
+    font-size: 12px;
+}

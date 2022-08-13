@@ -1,14 +1,14 @@
+import styles from './Header.module.css';
 
-import styles from './Header.module.css'
-import React from 'react';
+import ThemeToggle from 'components/ThemeToggle';
 
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
-        </div>
+        <header className={styles.header}>
+            <h2 className={styles.title}>Pantry</h2>
+            <ThemeToggle />
+        </header>
     );
 };
 
 export default Header;
-

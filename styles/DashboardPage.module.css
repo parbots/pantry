@@ -1,0 +1,17 @@
+.page {
+    display: grid;
+    grid-template-areas:
+        'header content'
+        'footer footer';
+}
+
+.main {
+    width: 90vw;
+    height: 100vh;
+
+    grid-area: content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

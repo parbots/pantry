@@ -1,14 +1,11 @@
-
-import styles from './Footer.module.css'
-import React from 'react';
+import styles from './Footer.module.css';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer className={styles.footer}>
+            <p className={styles.copyright}>© Parker Botsford 2022</p>
+        </footer>
     );
 };
 
 export default Footer;
-
