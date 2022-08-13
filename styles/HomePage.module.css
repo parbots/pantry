@@ -5,15 +5,6 @@
     flex-direction: column;
 }
 
-.header {
-    min-height: 10vh;
-
-    display: flex;
-    align-items: center;
-
-    padding: 1rem;
-}
-
 .main {
     min-height: 85vh;
 
@@ -22,16 +13,4 @@
 
     justify-content: center;
     align-items: center;
-}
-
-.footer {
-    min-height: 5vh;
-
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-}
-
-.copyright {
-    font-size: 12px;
 }
