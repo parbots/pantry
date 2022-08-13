@@ -1,10 +1,24 @@
 .button {
+    width: 10vh;
+
     padding: 0.5rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: solid 0.2rem var(--color);
+    cursor: pointer;
+
+    border: none;
     border-radius: 0.5rem;
+
+    color: var(--highlight);
+    background-color: var(--background);
+
+    transition: color 0.3s, background 0.3s;
+}
+
+.button:hover {
+    color: var(--background);
+    background-color: var(--highlight);
 }

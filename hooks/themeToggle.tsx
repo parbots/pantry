@@ -6,20 +6,15 @@ import {
     ReactNode,
 } from 'react';
 
-interface ThemeToggleInterface {
-    theme: string;
-    toggleTheme: () => void;
-}
+type ThemeToggle = [theme: string, toggleTheme: () => void];
 
-export const ThemeToggleContext = createContext<ThemeToggleInterface | null>(
-    null
-);
+const ThemeToggleContext = createContext<ThemeToggle | null>(null);
 
 type ProviderProps = {
     children: ReactNode;
 };
 
-export const ThemeProvider = ({ children }: ProviderProps) => {
+export const ThemeToggleProvider = ({ children }: ProviderProps) => {
     const [theme, setTheme] = useState<string>('light');
 
     const toggleTheme = () => {
@@ -31,12 +26,12 @@ export const ThemeProvider = ({ children }: ProviderProps) => {
     }, [theme]);
 
     return (
-        <ThemeToggleContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeToggleContext.Provider value={[theme, toggleTheme]}>
             {children}
         </ThemeToggleContext.Provider>
     );
 };
 
 export const useThemeToggle = () => {
-    return useContext(ThemeToggleContext);
+    return useContext(ThemeToggleContext)!;
 };

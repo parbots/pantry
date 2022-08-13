@@ -1,3 +1,25 @@
+:root {
+    --light-color: black;
+    --light-highlight: darkgray;
+    --light-background: white;
+
+    --dark-color: white;
+    --dark-highlight: darkgray;
+    --dark-background: black;
+}
+
+body[data-theme='light'] {
+    --color: var(--light-color);
+    --highlight: var(--light-highlight);
+    --background: var(--light-background);
+}
+
+body[data-theme='dark'] {
+    --color: var(--dark-color);
+    --highlight: var(--dark-highlight);
+    --background: var(--dark-background);
+}
+
 *,
 *::before,
 *::after {
@@ -25,6 +47,11 @@ html:focus-within {
 body {
     min-height: 100vh;
     height: 100%;
+
+    color: var(--color);
+    background-color: var(--background);
+
+    transition: color 0.3s, background 0.3s;
 }
 
 img,
@@ -57,6 +84,32 @@ h4,
 h5,
 h6 {
     overflow-wrap: break-word;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+::selection {
+    color: var(--background);
+    background-color: var(--color);
 }
 
 #__next {
