@@ -6,8 +6,6 @@ import Head from 'next/head';
 import Header from 'layouts/pages/landing/Header';
 import Footer from 'layouts/pages/landing/Footer';
 
-// TODO: Create favicon
-
 const HomePage: NextPage = () => {
     return (
         <div className={styles.page}>
@@ -17,7 +15,6 @@ const HomePage: NextPage = () => {
                     name='description'
                     content='All your developer ingredients, in one place!'
                 />
-                <link rel='icon' href='/favicon.ico' />
             </Head>
 
             <Header />
