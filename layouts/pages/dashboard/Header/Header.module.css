@@ -1,13 +1,20 @@
 .header {
     height: 15vh;
 
-    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid var(--highlight);
+}
+
+.headerTop {
+    flex: 1;
+
+    padding: 0.5rem 2rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    border-bottom: 1px solid var(--highlight);
 }
 
 .title {
@@ -23,4 +30,49 @@
     color: var(--color);
 
     transition: color 0.3s, background 0.3s;
+}
+
+.headerBottom {
+    flex: 1;
+
+    padding: 0.5rem 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink {
+    padding: 0.5rem;
+
+    border: 1px solid var(--highlight);
+    border-radius: 0.5rem;
+
+    text-decoration: none;
+
+    color: var(--color);
+
+    transition: background 0.3s;
+}
+
+.navLink:hover {
+    background-color: var(--highlight);
 }
