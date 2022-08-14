@@ -1,20 +1,19 @@
 .header {
-    width: 10vw;
-    height: 100vh;
+    height: 15vh;
 
-    padding: 1rem;
-
-    grid-area: header;
+    padding: 1rem 2rem;
 
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    border-radius: 0 0.5rem 0.5rem 0;
-    overflow: hidden;
+    border-bottom: 1px solid var(--highlight);
+}
 
-    background-color: var(--highlight);
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .titleLink {

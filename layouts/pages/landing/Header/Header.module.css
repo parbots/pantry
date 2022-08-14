@@ -23,6 +23,8 @@
 
 .navBar {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navList {
@@ -34,6 +36,8 @@
 
 .navItem {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navLink {

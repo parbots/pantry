@@ -19,9 +19,7 @@ const DashboardPage: NextPage = () => {
             </Head>
 
             <Header />
-            <main className={styles.main}>
-                <Dashboard />
-            </main>
+            <Dashboard />
             <Footer />
         </div>
     );

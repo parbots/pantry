@@ -1,24 +1,6 @@
 .page {
-    display: grid;
-    grid-template-areas:
-        'header content'
-        'footer footer';
-}
-
-.main {
-    width: 90vw;
-    height: 100vh;
-
-    padding: 1rem;
-
-    grid-area: content;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
-}
-
-.title {
-    padding-left: 1rem;
-
-    font-size: 2rem;
 }
