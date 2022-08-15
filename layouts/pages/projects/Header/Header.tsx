@@ -23,6 +23,11 @@ const Header = () => {
                                 <a className={styles.navLink}>Dashboard</a>
                             </Link>
                         </li>
+                        <li className={styles.navItem}>
+                            <Link href='/projects'>
+                                <a className={styles.navLink}>Projects</a>
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </section>
