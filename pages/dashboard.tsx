@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Header from 'layouts/pages/dashboard/Header';
-import Dashboard from 'layouts/Dashboard';
+import Dashboard from 'layouts/views/Dashboard';
 import Footer from 'layouts/pages/dashboard/Footer';
 
 const DashboardPage: NextPage = () => {
