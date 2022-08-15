@@ -4,6 +4,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Header from 'layouts/pages/projects/Header';
+import ProjectsView from 'layouts/views/ProjectsView';
 import Footer from 'layouts/pages/projects/Footer';
 
 const ProjectsPage: NextPage = () => {
@@ -18,7 +19,7 @@ const ProjectsPage: NextPage = () => {
             </Head>
 
             <Header />
-            <main></main>
+            <ProjectsView />
             <Footer />
         </div>
     );
