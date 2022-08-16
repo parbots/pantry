@@ -1,14 +1,29 @@
-
-import styles from './NewProjectForm.module.css'
-import React from 'react';
+import styles from './NewProjectForm.module.css';
 
 const NewProjectForm = () => {
+    const handleCreateProject = () => {};
+
     return (
-        <div>
-            <h1>NewProjectForm</h1>
-        </div>
+        <form className={styles.form}>
+            <h1 className={styles.title}>New Project</h1>
+            <label htmlFor='name'>
+                {'Project Name '}
+                <input
+                    type='text'
+                    name='name'
+                    id='name'
+                    className={styles.projectNameInput}
+                />
+            </label>
+
+            <button
+                onSubmit={handleCreateProject}
+                className={styles.createProjectButton}
+            >
+                Create
+            </button>
+        </form>
     );
 };
 
 export default NewProjectForm;
-

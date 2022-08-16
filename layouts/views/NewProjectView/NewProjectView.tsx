@@ -1,9 +1,11 @@
 import styles from './NewProjectView.module.css';
 
+import NewProjectForm from 'components/NewProjectForm';
+
 const NewProjectView = () => {
     return (
         <main className={styles.view}>
-            <h1 className={styles.title}>New Project</h1>
+            <NewProjectForm />
         </main>
     );
 };

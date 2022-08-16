@@ -1,0 +1,29 @@
+.form {
+    width: 50vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.createProjectButton {
+    padding: 0.5rem;
+
+    border: 1px solid lightgreen;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    color: var(--color);
+    background-color: var(--background);
+
+    transition: color 0.3s, background 0.3s;
+}
+
+.createProjectButton:hover {
+    color: black;
+    background-color: lightgreen;
+}
