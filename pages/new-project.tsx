@@ -18,9 +18,7 @@ const NewProjectPage: NextPage = () => {
             </Head>
 
             <Header />
-            <main>
-                <h1>New Project</h1>
-            </main>
+
             <Footer />
         </div>
     );
