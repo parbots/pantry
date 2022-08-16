@@ -1,14 +1,11 @@
-
-import styles from './NewProjectView.module.css'
-import React from 'react';
+import styles from './NewProjectView.module.css';
 
 const NewProjectView = () => {
     return (
-        <div>
-            <h1>NewProjectView</h1>
-        </div>
+        <main className={styles.view}>
+            <h1 className={styles.title}>New Project</h1>
+        </main>
     );
 };
 
 export default NewProjectView;
-
