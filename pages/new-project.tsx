@@ -1,13 +1,12 @@
-import styles from 'styles/ProjectsPage.module.css';
+import styles from 'styles/NewProjectPage.module.css';
 
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Header from 'layouts/pages/projects/Header';
-import ProjectsView from 'layouts/views/ProjectsView';
 import Footer from 'layouts/pages/projects/Footer';
 
-const ProjectsPage: NextPage = () => {
+const NewProjectPage: NextPage = () => {
     return (
         <div className={styles.page}>
             <Head>
@@ -19,10 +18,12 @@ const ProjectsPage: NextPage = () => {
             </Head>
 
             <Header />
-            <ProjectsView />
+            <main>
+                <h1>New Project</h1>
+            </main>
             <Footer />
         </div>
     );
 };
 
-export default ProjectsPage;
+export default NewProjectPage;

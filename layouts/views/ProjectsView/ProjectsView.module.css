@@ -20,13 +20,13 @@
     align-items: center;
 }
 
-.newProjectButton {
+.newProjectLink {
     padding: 0.5rem;
 
     border: 1px solid lightgreen;
     border-radius: 0.5rem;
 
-    cursor: pointer;
+    text-decoration: none;
 
     color: var(--color);
     background-color: var(--background);
@@ -34,7 +34,7 @@
     transition: color 0.3s, background 0.3s;
 }
 
-.newProjectButton:hover {
+.newProjectLink:hover {
     color: black;
     background-color: lightgreen;
 }

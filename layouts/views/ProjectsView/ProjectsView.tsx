@@ -1,13 +1,15 @@
 import styles from './ProjectsView.module.css';
 
+import Link from 'next/link';
+
 const ProjectsView = () => {
     return (
         <main className={styles.view}>
             <ul className={styles.controlsBar}>
                 <li className={styles.controlsItem}>
-                    <button className={styles.newProjectButton}>
-                        New Project
-                    </button>
+                    <Link href='/new-project'>
+                        <a className={styles.newProjectLink}>New Project</a>
+                    </Link>
                 </li>
             </ul>
         </main>
