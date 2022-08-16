@@ -4,7 +4,13 @@ import React from 'react';
 const ProjectsView = () => {
     return (
         <main className={styles.view}>
-            <h1>Projects Content</h1>
+            <ul className={styles.controlsBar}>
+                <li className={styles.controlsItem}>
+                    <button className={styles.newProjectButton}>
+                        New Project
+                    </button>
+                </li>
+            </ul>
         </main>
     );
 };
